@@ -1,0 +1,118 @@
+.main_div {
+    width: 960px;
+    /*border: solid 2px salmon;*/
+    margin: auto;
+    }
+
+  
+.navbar-box {
+    display:flex;
+    height: 50px;
+    background-color: #4E4E4E;
+    line-height: 21px;
+    font-size: 18px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+.comp-name {
+    color: white;
+    font-weight: 700;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-weight: 400;
+    color: #F1F1F1;
+}
+
+
+.nav-list-el {
+    margin-left: 46px;
+}
+
+
+.page-header {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(
+        rgba(138, 98, 17, 0.6),
+        rgba(60, 40, 0, 0.6)
+      ), url("https://images.unsplash.com/photo-1667645336934-14f086562b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.header-content {
+    margin-left: 94px;
+    display: flex;
+    width: 577px;
+    height: 215px;
+    /*align-items: center;*/
+    flex-direction: column;
+    border: solid 2px salmon;
+    color:white;
+}
+
+
+.header-content .header-h1,.header-h2 {
+    margin-bottom: 50px;
+}
+
+
+.offer-button {
+    width: 164px;
+    height: 40.74px;
+    border: 3px solid #FFFFFF;
+    transition: 1s ease-out;
+    background-color: transparent;
+    color:inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+
+.offer-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+.header-h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+
+.header-h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+body { 
+    font-family: 'Roboto', sans-serif;
+}
+
+a { color: inherit;
+    text-decoration: none;
+ } 
+
+
+* {
+    box-sizing: border-box;
+  }
