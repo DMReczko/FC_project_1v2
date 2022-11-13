@@ -1,6 +1,8 @@
 .main_div {
     width: 960px;
-    /*border: solid 2px salmon;*/
+    /*height: 2000px;*/
+    border: solid 2px salmon;
+    background-color: #F1F1F1;
     margin: auto;
     }
 
@@ -14,8 +16,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 94px;
+    padding-right: 94px;
 }
 
 
@@ -40,6 +42,11 @@
 }
 
 
+.nav-link-dis {
+    cursor: not-allowed;
+}
+
+
 .page-header {
     height: 100vh;
     display: flex;
@@ -53,14 +60,15 @@
 
 
 .header-content {
-    margin-left: 94px;
     display: flex;
     width: 577px;
     height: 215px;
+    padding-left: 94px;
     /*align-items: center;*/
     flex-direction: column;
     border: solid 2px salmon;
     color:white;
+    scroll-behavior: smooth;
 }
 
 
@@ -104,9 +112,115 @@
 }
 
 
+.about-h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #152D41;
+    }
+
+
+.page-content {
+    margin-top:51px;
+    padding-left: 94px;
+    padding-right: 94px;
+}
+
+
+.employee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+
+.employee:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+}
+
+
+.employee:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+.employee:nth-child(odd) .employee-bio  {
+    margin-left: 60px;
+}
+
+
+.employee:nth-child(even) .employee-bio  {
+    margin-right: 60px;
+}
+
+
+.employee-pic-1 {
+    flex: 0 0 200px;
+    background-image: url("../media/horace.png");
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+}
+
+.employee-pic-2 {
+    flex: 0 0 200px;
+    background-image: url("../media/minerva.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+}
+
+.employee-pic-3 {
+    flex: 0 0 200px;
+    background-image: url("../media/mugwump.png");
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+}
+
+.employee-pic-4 {
+    flex: 0 0 200px;
+    background-image: url("../media/snivellus.jpeg");
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+}
+
+
+.bio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.bio-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body { 
     font-family: 'Roboto', sans-serif;
 }
+
 
 a { color: inherit;
     text-decoration: none;
