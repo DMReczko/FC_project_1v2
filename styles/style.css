@@ -8,6 +8,8 @@ body {
     font-style: normal;
     font-weight: 400;
     color: white;
+    background-color: #F1F1F1;
+    margin: auto;
 }
 
 
@@ -22,13 +24,13 @@ a {
   }
 
 
-.main_div {
-    /*width: 960px;*/
+/*.main_div {
+    width: 960px;*/
     /*height: 2000px;*/
-    /*border: solid 2px salmon;*/
+    /*border: solid 2px salmon;
     background-color: #F1F1F1;
     margin: auto;
-    }
+    }*/
 
   
 .navbar-box {
@@ -82,7 +84,24 @@ a {
 
 .nav-list-el {
     margin-left: 46px;
+    position:relative;
 }
+
+.nav-list-el::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #556163;
+    transition: all 0.5s ease-in;
+  }
+
+
+.nav-list-el:hover::after {
+    width: 100%;
+  }
 
 
 .nav-link-dis {
@@ -99,6 +118,7 @@ a {
 .page-header {
     height: calc(100vh - 50px);
     display: flex;
+    /*nie robiłam diva, gradient wydaje mi się prostszy w implementacji?*/
     background: linear-gradient(
         rgba(5, 42, 66, 0.6),
         rgba(0, 38, 60, 0.6)
@@ -332,7 +352,7 @@ a {
 
 .offer-box:hover {
     transform: scale(1.05);
-    transition: all 0.2s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 
