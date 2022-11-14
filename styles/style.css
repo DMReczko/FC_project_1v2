@@ -296,27 +296,28 @@ a {
 
 .all-offers {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 64px;
-    row-gap: 64px;
-    grid-auto-rows: 198px;
+    width:720px;
+    margin:auto;
+    grid-template-columns: auto auto auto;
+    gap: 63px;
+    /*grid-auto-rows: 198px;
     grid-auto-columns: 194px;
-    /*
     justify-content: space-between;
     align-content: space-around;
-    flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    border: solid 2px salmon;*/
     margin-top: 83px;
     padding-bottom: 64px;  
-    /*border: solid 2px salmon;*/
+    
 }
 
 
 .offer-box {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #F1F1F1;
-    /*height: 197px;
-    width: 197px;
-    height: auto;
+    min-height: 194px;
+    min-width: 198px;
+    /*height: auto;
     width: auto;*/
     font-weight: 400;
     font-size: 24px;
@@ -338,10 +339,10 @@ a {
 .offer-box-new {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #F1F1F1;
-    /*height: 197px;
-    width: 197px;*/
+    min-height: 194px;
+    min-width: 198px;/*
     height: auto;
-    width: auto;
+    width: auto;*/
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
