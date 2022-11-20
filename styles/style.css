@@ -1,3 +1,8 @@
+ * {
+    box-sizing: border-box;
+  }
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +14,6 @@ body {
     font-weight: 400;
     color: white;
     background-color: #F1F1F1;
-    margin: auto;
 }
 
 
@@ -19,18 +23,9 @@ a {
  } 
 
 
- * {
-    box-sizing: border-box;
-  }
-
-
-/*.main_div {
-    width: 960px;*/
-    /*height: 2000px;*/
-    /*border: solid 2px salmon;
-    background-color: #F1F1F1;
-    margin: auto;
-    }*/
+ i {
+    margin-left: 18px;
+}
 
   
 .navbar-box {
@@ -41,19 +36,13 @@ a {
     top:0px;
     position:sticky;
     z-index: 1000;
-    /*line-height: 21px;
-    font-size: 18px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 94px;
-    padding-right: 94px;*/
 }
 
 
 .navbar {
     width:960px;
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
     display:flex;
     line-height: 21px;
     font-size: 18px;
@@ -61,8 +50,6 @@ a {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    /*padding-left: 94px;
-    padding-right: 94px;*/
 }
 
 
@@ -110,7 +97,6 @@ a {
 
 
 .page-content {
-    /*width: 960px;*/
     margin:auto;
 }
 
@@ -118,7 +104,6 @@ a {
 .page-header {
     height: calc(100vh - 50px);
     display: flex;
-    /*nie robiłam diva, gradient wydaje mi się prostszy w implementacji?*/
     background: linear-gradient(
         rgba(5, 42, 66, 0.6),
         rgba(0, 38, 60, 0.6)
@@ -129,14 +114,10 @@ a {
 
 
 .header-content {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 960px;
     scroll-behavior: smooth;
-    /*padding-left: 94px;
-    padding-right: 94px;
-    align-items: center;
-    border: solid 2px salmon;
-    color:white;*/
 }
 
 
@@ -147,12 +128,9 @@ a {
 }
 
 
-.header-h1,.header-h2 {
-    margin-bottom: 50px;
-}
-
-
-.offer-button {
+.offer-link {
+    display: block;
+    text-align: center;
     width: 164px;
     height: 41px;
     border: 3px solid #FFFFFF;
@@ -162,30 +140,34 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    padding-top: 7px;
   }
   
 
-.offer-button:hover {
+.offer-link:hover {
     background-color: white;
     color: black;
   }
 
 
-.header-h1 {
+
+.intro {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 50px;
 }
 
 
-.header-h2 {
+.intro-2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 50px;
 }
 
 
-.about-h1 {
+.about-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -194,13 +176,14 @@ a {
 
 
 .about-content {
-    padding-top: 51px /*94px 51px 94px;*/
+    padding-top: 51px 
 }
 
 
 .employees-container {
     width:960px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     padding-bottom: 68px;
 }
@@ -235,46 +218,30 @@ a {
     margin-right: 60px;
 }
 
-
-.employee-pic-1 {
+.employee-pic {
     flex: 0 0 197px;
+    background-position: center;
+    background-size: cover;
+    width: 197px;
+    height: 197px;
+    border-radius: 50%; 
+}
+
+.em-pic-1 {
     background-image: url("../media/horace.png");
-    background-position: center;
-    background-size: cover;
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-}
+    }
 
-.employee-pic-2 {
-    flex: 0 0 197px;
+.em-pic-2 {
     background-image: url("../media/minerva.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-}
+    }
 
-.employee-pic-3 {
-    flex: 0 0 197px;
+.em-pic-3 {
     background-image: url("../media/mugwump.png");
-    background-position: center;
-    background-size: cover;
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-}
+    }
 
-.employee-pic-4 {
-    flex: 0 0 197px;
+.em-pic-4 {
     background-image: url("../media/snivellus.jpeg");
-    background-position: center;
-    background-size: cover;
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-}
+    }
 
 
 .bio-name {
@@ -292,7 +259,7 @@ a {
 }
 
 
-.offer-h1 {
+.offer-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -303,15 +270,14 @@ a {
 
 .offer-container {
     width: 960px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 50px;
 }
 
 
 .offer-content {
     background-color: #405D78;
-    /*padding: 51px 94px 51px 94px;*/
-    /*border: solid 2px salmon;*/
 }
 
 .all-offers {
@@ -320,12 +286,6 @@ a {
     margin:auto;
     grid-template-columns: auto auto auto;
     gap: 63px;
-    /*grid-auto-rows: 198px;
-    grid-auto-columns: 194px;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
-    border: solid 2px salmon;*/
     margin-top: 83px;
     padding-bottom: 64px;  
     
@@ -335,10 +295,8 @@ a {
 .offer-box {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #F1F1F1;
-    min-height: 194px;
-    min-width: 198px;
-    /*height: auto;
-    width: auto;*/
+    height: 194px;
+    width: 198px;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -347,43 +305,27 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: black;    
+    transition: all 0.5s ease-out;
 }
 
 .offer-box:hover {
     transform: scale(1.05);
-    transition: all 0.5s ease-out;
 }
 
 
-.offer-box-new {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: #F1F1F1;
-    min-height: 194px;
-    min-width: 198px;/*
-    height: auto;
-    width: auto;*/
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
+.offer-new {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: black;
     position: relative;
-    /*żeby ::before pokazał się poprawnie, nie mogło tu być 'overflow:auto'*/
 }
 
 
-.offer-box-new:hover {
+.offer-new:hover {
     transform: scale(1.05);
-    transition: all 0.2s ease-out;
 }
 
 
-.offer-box-new::before {
+.offer-new::before {
     content:"";
     display:block;
     width: 22px;
@@ -413,7 +355,8 @@ a {
     display:flex;
     width: 960px;
     height:50px;
-    margin: auto;    
+    margin-left: auto;
+    margin-right: auto;    
     line-height: 21px;
     font-weight: 700;
     font-size: 18px;
@@ -430,11 +373,4 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-i {
-    margin-left: 18px;
-}
-
-
 
