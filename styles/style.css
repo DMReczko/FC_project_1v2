@@ -111,7 +111,7 @@ i {
     flex-direction: column;
 }
 
-.offer-link {
+.header-smallbox a {
     display: block;
     text-align: center;
     width: 164px;
@@ -121,12 +121,11 @@ i {
     background-color: transparent;
     color: inherit;
     font-weight: 700;
-    font-size: 18px;
     line-height: 21px;
     padding-top: 7px;
 }
 
-.offer-link:hover {
+.header-smallbox a:hover {
     background-color: white;
     color: black;
 }
